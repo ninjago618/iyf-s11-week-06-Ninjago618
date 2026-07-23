@@ -38,4 +38,4 @@ What problems did you encounter and how did you solve them?
 ![Screenshot description](path/to/screenshot.png)
 
 ## Live Demo (if deployed)
-[View Live Demo]()
+[View Live Demo](https://ninjago618.github.io/iyf-s11-week-06-Ninjago618/)
