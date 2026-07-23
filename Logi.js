@@ -52,7 +52,7 @@ async function getWeather(city) {
 
   description.textContent = data.weather[0].description;
 
-        feelsLike.textContent = 'Feels Like: ${Math.round(data.main.feels_like)}°C';
+        feelsLike.textContent = `Feels Like: ${Math.round(data.main.feels_like)}°C`;
 
   humidity.textContent = `Humidity: ${data.main.humidity}%`;
 
