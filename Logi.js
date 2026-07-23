@@ -47,7 +47,8 @@ async function getWeather(city) {
 
 function displayWeather(data) {
     // Update all the DOM elements with weather data
-    cityName.textContent = `${data.name}, ${data.sys.country}`;    
+    cityName.textContent = `${data.name}, ${data.sys.country}`; 
+    
     function displayWeather(data) {
   cityName.textContent = `${data.name}, ${data.sys.country}`;
 
