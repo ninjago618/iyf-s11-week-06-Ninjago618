@@ -47,36 +47,28 @@ async function getWeather(city) {
 
 function displayWeather(data) {
     // Update all the DOM elements with weather data
-    cityName.textContent = `${data.name}, ${data.sys.country}`;
-    // ... complete the rest
-    
-    weatherDisplay.classList.remove("hidden");
-}
+    cityName.textContent = `${data.name}, ${data.sys.country}`;    
+    function displayWeather(data) {
+  cityName.textContent = `${data.name}, ${data.sys.country}`;
 
-function showLoading() {
-    loading.classList.remove("hidden");
-    weatherDisplay.classList.add("hidden");
-}
+  temperature.textContent = `${Math.round(data.main.temp)}°C`;
 
-function hideLoading() {
-    loading.classList.add("hidden");
-}
+  description.textContent = data.weather[0].description;
 
-function showError(message) {
-    error.textContent = message;
-    error.classList.remove("hidden");
-}
+  feelsLike.textContent = `Feels Like: ${Math.round(data.main.feels_like)}°C`;
 
-function hideError() {
-    error.classList.add("hidden");
-}
+  humidity.textContent = `Humidity: ${data.main.humidity}%`;
 
-function saveToHistory(city) {
-    // Save to localStorage
-}
+  wind.textContent = `Wind: ${data.wind.speed} m/s`;
 
-function loadHistory() {
-    // Load from localStorage and display
+  pressure.textContent = `Pressure: ${data.main.pressure} hPa`;
+
+  weatherIcon.src =
+    `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+
+  weatherIcon.alt = data.weather[0].description;
+
+  weatherDisplay.classList.remove("hidden");
 }
 
 // Event Listeners
