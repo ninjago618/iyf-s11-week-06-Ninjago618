@@ -21,7 +21,7 @@ const wind = document.getElementById("wind");
 const pressure = document.getElementById("pressure");
 
 // History element (if it exists)
-const historyContainer = document.getElementById("history-container");
+const historyContainer = document.getElementById("search-history");
 
 async function getWeather(city) {
     const url = `${BASE_URL}?q=${city}&appid=${API_KEY}&units=metric`;
