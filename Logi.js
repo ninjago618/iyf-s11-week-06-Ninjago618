@@ -72,8 +72,8 @@ function saveToHistory(city) {
 }
 
 function loadHistory() {
-  // Load from localStorage
-                                      }
+  // Load from localstorage 
+}
 // Event Listeners
 form.addEventListener("submit", (e) => {
     e.preventDefault();
