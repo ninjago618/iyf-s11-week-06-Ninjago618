@@ -70,23 +70,7 @@ function showError(message) {
 function hideError() {
     error.classList.add("hidden");
 }
-function showLoading() {
-    loading.classList.remove("hidden");
-    weatherDisplay.classList.add("hidden");
-}
 
-function hideLoading() {
-    loading.classList.add("hidden");
-}
-
-function showError(message) {
-    error.textContent = message;
-    error.classList.remove("hidden");
-}
-
-function hideError() {
-    error.classList.add("hidden");
-}
 function saveToHistory(city) {
     // Save to localStorage
 }
