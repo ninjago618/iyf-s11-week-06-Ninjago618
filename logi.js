@@ -48,8 +48,24 @@ async function getWeather(city) {
 function displayWeather(data) {
     // Update all the DOM elements with weather data
     cityName.textContent = `${data.name}, ${data.sys.country}`;
-    // ... complete the rest
-    
+    // complete the rest
+    temperature.textContent = `${Math.round(data.main.temp)}°C`;
+
+  description.textContent = data.weather[0].description;
+
+  feelsLike.textContent = `Feels Like: ${Math.round(data.main.feels_like)}°C`;
+
+  humidity.textContent = `Humidity: ${data.main.humidity}%`;
+
+  wind.textContent = `Wind: ${data.wind.speed} m/s`;
+
+  pressure.textContent = `Pressure: ${data.main.pressure} hPa`;
+
+  weatherIcon.src =
+    `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+
+  weatherIcon.alt = data.weather[0].description;
+       
     weatherDisplay.classList.remove("hidden");
 }
 
