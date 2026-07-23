@@ -67,7 +67,13 @@ async function getWeather(city) {
 
   weatherDisplay.classList.remove("hidden");
 }
+function saveToHistory(city) {
+  // Save to localStorage
+}
 
+function loadHistory() {
+  // Load from localStorage
+                                      }
 // Event Listeners
 form.addEventListener("submit", (e) => {
     e.preventDefault();
